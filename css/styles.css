@@ -419,8 +419,8 @@ padding-bottom: 16px;
 /*-----------end clients---------------- */
 /* ----------------------footer--------------------- */
 .footer{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
     background: #2F303A;
 }
 
@@ -451,6 +451,45 @@ color: #FFFFFF;
 
 .footer .site-logo{
     color:#FFFFFF;
+}
+
+.invitation{
+    padding-top: 72px;
+    padding-bottom: 100px;
+}
+
+.invitation-text{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer .container{
+    display: flex;
+}
+
+.footer .address-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-right: 70px;
+}
+
+.footer .social-list{
+    padding-bottom: 0;
+}
+
+.footer .social-list-link{
+    fill: #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-list-link:hover,
+.footer .social-list-link:focus{
+    background-color: var(--accent-color);
 }
 /* ------------------end footer-------------------------- */
 /* ---------------portfolio projects button------------- */
