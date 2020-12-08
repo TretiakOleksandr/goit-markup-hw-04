@@ -1,0 +1,426 @@
+ /* #2196F3 синий акцент*/
+ /* #212121 черный основной*/
+ /* #000000 лого */
+ /* #757575 дополнительный серый */
+ /* #FFFFFF осн заголовок и кнопка */
+ /* rgba(255, 255, 255, 0.6) телефон и почта в футере*/
+ /* 2F303A вр. фон героя и футера*/
+
+:root{
+    --accent-color:  #2196F3;
+    --main-font: "Roboto", sans-serif;
+}
+
+body{
+    font-family: var(--main-font);
+}
+
+.list{
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+ul, ol{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    display: block;
+}
+
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* ----------------------header--------------------------- */
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.site-nav{
+    display: flex;
+    align-items: center;
+}
+
+.site-nav-menu{
+    display: flex;
+}
+
+.contacts-list{
+    display: flex;
+    align-items: center;
+}
+
+.header .site-logo{
+    margin-right: 93px;
+}
+
+.site-nav-menu-item:not(:last-child){
+    margin-right: 50px;
+}
+
+.contacts{
+    margin-left: auto;
+}
+
+.contacts-list-mail{
+    margin-right: 40px;
+}
+
+.contacts,
+.footer-contacts{
+     font-style: normal;
+}
+
+.site-logo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.logo-color{
+     color: #2196F3;
+}
+
+.site-nav-menu-link{ 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;    
+    color: #212121;
+}
+
+.current{
+     color: var(--accent-color);
+}
+
+.site-nav-menu-link:hover,
+.site-nav-menu-link:focus,
+.contacts-list-mail:hover,
+.contacts-list-mail:focus,
+.contacts-list-phone:hover,
+.contacts-list-phone:focus,
+.footer-address-mail:hover,
+.footer-address-mail:focus,
+.footer-address-phone:hover,
+.footer-address-phone:focus{
+     color: var(--accent-color);
+}
+
+.contacts-list-phone,
+.contacts-list-mail{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.143;
+letter-spacing: 0.02em;
+color: #757575;
+}
+/* -------------end header--------------------- */
+/* --------------hero------------------------- */
+.hero-section{
+    display: flex;
+    align-items: center;
+    background-color: #2F303A;
+    min-height: 600px;
+    /* padding-top: 199px; */
+    /* margin-bottom: 200px; */
+}
+
+/* .hero-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+} */
+
+.hero-header{
+font-weight: 900;
+font-size: 44px;
+line-height: 1.364;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: #FFFFFF;
+/* margin-top: 200px; */
+margin-bottom: 30px;
+}
+
+.hero-button{
+font-family: var(--main-font);    
+font-weight: 700;
+font-size: 16px;
+line-height: 1.875;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+background-color: var(--accent-color);
+border: none;
+cursor: pointer;
+padding: 10px 32px;
+margin-left: auto;
+margin-right: auto;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+/* -----------------end hero-------------------------- */
+/* -----------------advantages-------------------------- */
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.advantages-section{
+    /* margin-top: 94px; */
+    padding-top: 94px;
+}
+
+.advantages-list{
+    display: flex;
+}
+
+.advantages-list-item{
+    max-width: 270px;
+}
+
+.advantages-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.advantages-name{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.143;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #212121;
+margin-bottom: 10px;
+}
+
+.advantages-description{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.714;
+letter-spacing: 0.03em;
+color: #757575;
+}
+/* --------------end advantages */
+/* --------------what we do--------------------- */
+.whatwedo-section{
+    /* margin-top: 94px; */
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.whatwedo-list{
+    display: flex;
+}
+
+.whatwedo-header{
+    margin-bottom: 50px;
+}
+
+.whatwedo-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.whatwedo-header,
+.comand-header{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.167;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+/* ---------------------end what we do--------------------------- */
+/* ---------------------comand----------------------- */
+.comand-section{
+    padding-top: 186px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+}
+
+.comand-header{
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+
+.comand-list{
+    display: flex;
+}
+
+.comand-list-item{
+    background: #FFFFFF;
+    /* material shadow v1 */
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.comand-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.comand-list-item-name{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.188;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+padding-top: 30px;
+padding-bottom: 10px;
+}
+
+.comand-list-item-profession{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.188;
+text-align: center;
+letter-spacing: 0.03em;
+color: #757575;
+padding-bottom: 30px;
+}
+/* ---------------------end comand------------------------- */
+/* ----------------------footer--------------------- */
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #2F303A;
+}
+
+.footer .footer-contacts{
+    padding-top: 20px;
+}
+
+.footer-address-item{
+    padding-top: 9px;
+}
+
+.footer-address-mail,
+.footer-address-phone{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.714;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address-physical{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.714;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+}
+
+.footer .site-logo{
+    color:#FFFFFF;
+}
+/* ------------------end footer-------------------------- */
+/* ---------------portfolio projects button------------- */
+.project-section{
+    padding-top: 94px;
+    padding-bottom: 84px;
+}
+
+.button-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button-list-item:not(:last-child){
+    margin-right: 8px;
+}
+
+.project-button{
+font-family: var(--main-font);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.625;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+background: #F5F4FA;
+border-radius: 4px;
+border: none;
+cursor: pointer;
+padding: 6px 22px;
+}
+
+.project-button:hover,
+.project-button:focus{
+color: #FFFFFF;
+background-color: var(--accent-color);    
+}
+/* -------------end portfolio projects button---------------- */
+/* --------------portfolio projects---------------- */
+
+.project-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-list-item{
+    width: 370px;
+}
+
+.project-list-item:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+
+.project-list-item:not(:nth-last-child(-n+3)){
+    margin-bottom: 30px;
+}
+
+.text-support{
+    border: solid 1px #EEEEEE;
+    border-top: none;
+}
+
+.project-name{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: #212121;
+padding-top: 20px;
+padding-bottom: 4px;
+padding-left: 24px;
+padding-right: 24px;
+}
+
+.project-description{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.875;
+letter-spacing: 0.03em;
+color: #757575;
+padding-left: 24px;
+padding-right: 24px;
+padding-bottom: 20px;
+}
+/* ------------end portfolio projects----------- */
