@@ -79,10 +79,6 @@ img{
     margin-left: auto;
 }
 
-.contacts-list-mail{
-    margin-right: 40px;
-}
-
 .contacts,
 .footer-contacts{
      font-style: normal;
@@ -115,15 +111,29 @@ img{
 
 .site-nav-menu-link:hover,
 .site-nav-menu-link:focus,
-.contacts-list-mail:hover,
-.contacts-list-mail:focus,
-.contacts-list-phone:hover,
-.contacts-list-phone:focus,
+.contacts-list-item:hover .contacts-list-mail,
+.contacts-list-item:focus .contacts-list-mail,
+.contacts-list-item:hover .contacts-list-phone,
+.contacts-list-item:focus .contacts-list-phone,
 .footer-address-mail:hover,
 .footer-address-mail:focus,
 .footer-address-phone:hover,
 .footer-address-phone:focus{
      color: var(--accent-color);
+}
+
+.contacts-list-item:hover .contact-list-icon,
+.contacts-list-item:focus .contact-list-icon{
+    fill: var(--accent-color);
+}
+
+.contacts-list-item{
+    display: flex;
+    align-items: center;
+}
+
+.contacts-list-item:not(:last-child){
+    margin-right: 40px;
 }
 
 .contacts-list-phone,
@@ -133,6 +143,10 @@ font-size: 14px;
 line-height: 1.143;
 letter-spacing: 0.02em;
 color: #757575;
+}
+
+.contact-list-icon{
+    margin-right: 10px;
 }
 /* -------------end header--------------------- */
 /* --------------hero------------------------- */
@@ -292,13 +306,12 @@ color: #212121;
 /* ---------------------end what we do--------------------------- */
 /* ---------------------comand----------------------- */
 .comand-section{
-    padding-top: 186px;
+    padding-top: 94px;
     padding-bottom: 94px;
     background-color: #F5F4FA;
 }
 
 .comand-header{
-    padding-top: 94px;
     margin-bottom: 50px;
 }
 
@@ -311,10 +324,15 @@ color: #212121;
     /* material shadow v1 */
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
 }
 
 .comand-list-item:not(:last-child){
     margin-right: 30px;
+}
+
+.comand-list-item-photo{
+    margin-bottom: 30px;
 }
 
 .comand-list-item-name{
@@ -324,8 +342,7 @@ line-height: 1.188;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
-padding-top: 30px;
-padding-bottom: 10px;
+margin-bottom: 10px;
 }
 
 .comand-list-item-profession{
@@ -335,13 +352,13 @@ line-height: 1.188;
 text-align: center;
 letter-spacing: 0.03em;
 color: #757575;
-padding-bottom: 16px;
+margin-bottom: 16px;
 }
 
 .social-list{
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 
 .social-list-item:not(:last-child){
@@ -419,17 +436,9 @@ padding-bottom: 16px;
 /*-----------end clients---------------- */
 /* ----------------------footer--------------------- */
 .footer{
-    /* padding-top: 60px;
-    padding-bottom: 60px; */
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: #2F303A;
-}
-
-.footer .footer-contacts{
-    padding-top: 20px;
-}
-
-.footer-address-item{
-    padding-top: 9px;
 }
 
 .footer-address-mail,
@@ -447,15 +456,22 @@ font-size: 14px;
 line-height: 1.714;
 letter-spacing: 0.03em;
 color: #FFFFFF;
+margin-bottom: 9px;
 }
 
+.footer-address-item:not(:last-child){
+    margin-bottom: 6px;
+}
+
+
 .footer .site-logo{
+    display: inline-block;
     color:#FFFFFF;
+    margin-bottom: 20px;
 }
 
 .invitation{
-    padding-top: 72px;
-    padding-bottom: 100px;
+    margin-top: 12px;
 }
 
 .invitation-text{
@@ -473,8 +489,8 @@ color: #FFFFFF;
 }
 
 .footer .address-container{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    /* padding-top: 60px;
+    padding-bottom: 60px; */
     margin-right: 70px;
 }
 
@@ -551,6 +567,7 @@ background-color: var(--accent-color);
 .text-support{
     border: solid 1px #EEEEEE;
     border-top: none;
+    padding: 20px 24px;
 }
 
 .project-name{
@@ -559,10 +576,6 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: #212121;
-padding-top: 20px;
-padding-bottom: 4px;
-padding-left: 24px;
-padding-right: 24px;
 }
 
 .project-description{
@@ -571,8 +584,5 @@ font-size: 16px;
 line-height: 1.875;
 letter-spacing: 0.03em;
 color: #757575;
-padding-left: 24px;
-padding-right: 24px;
-padding-bottom: 20px;
 }
 /* ------------end portfolio projects----------- */
